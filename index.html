@@ -1,42 +1,143 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Charles Roberts</title>
-<link rel="icon" href="Favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Roberts - Projects & Portfolio</title>
+    <link rel="icon" href="Favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            text-align: center;
+            padding: 1rem;
+            background: #005bb5;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            display: inline-block;
+            font-size: 1.2rem;
+        }
+
+        nav a:hover {
+            background-color: #003f7f;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #0073e6;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        section p {
+            margin-bottom: 1.5rem;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        ul li a {
+            font-weight: bold;
+            color: #0073e6;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0073e6;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
-
 <body>
-<h1>Welcome To My Website!</h1>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
 
-<h2>What is this website for?</h2>
-<p>[INSERT EXPLANATION HERE!]</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+    </nav>
 
-<h2>My Projects </h2>
-<ul>
+    <section id="about">
+        <h2>What is this website for?</h2>
+        <p>I created this website as a hub for me to showcase my past and future projects. I might later expand upon it with new ideas and sections as I think of them and create more things!</p>
+    </section>
 
+    <section id="projects">
+        <h2>My Projects</h2>
+        <ul>
+            <li>
+                <a href="Mandelbrot.html">Mandelbrot Renderer in Python</a>
+                <p>A project I created which produces images and videos representing the Mandelbrot set, a set of complex numbers with a long-winded definition.</p>
+            </li>
 
+            <li>
+                <a href="Documents/MathDoc.pdf">Mathematical Documentation</a>
+                <p>A document created in 2023 to expand on my EPQ, covering additional topics I couldn't discuss due to the word/page limit.</p>
+            </li>
 
-<li> <a href="Mandelbrot.html"> Mandelbrot Renderer in Python </a> </li>
-<p>A project I created which produces images and videos representing the mandelbrot set, a set of complex numbers with a long-winded definition.</p>
+            <li>
+                <a href="Documents/Fourier.pdf">Attempt at LaTeX (Fourier Series)</a>
+                <p>An exploration of LaTeX through the creation of a document on Fourier Series, with a focus on learning the tool rather than the mathematical concepts.</p>
+            </li>
 
+            <li>
+                <a href="Documents/EPQ.pdf">Extended Project Qualification (EPQ)</a>
+                <p>A project on the history of mathematics, completed as part of a qualification.</p>
+            </li>
 
-<li><a href="Documents/MathDoc.pdf">Mathematical Documentation</a></li>
-<p>A word document I created in 2023 which was supposed to expand upon my EPQ (see below) as there were many topics which I did not have time to discuss in there (due to the word/page limit)</p>
+            <li>
+                <a href="Documents/ComputerScienceProject.pdf">A Level Computer Science Programming Project</a>
+                <p>Developed a 3D physics engine from scratch, implementing all physics and 3D rendering independently. Videos can be found <a href="Documents/CSVideos">here</a>.</p>
+            </li>
+        </ul>
+    </section>
 
-
-<li> <a href="Documents/Fourier.pdf"> Attempt at LaTeX (Fourier Series) </a> </li>
-<p>I was introduced to a tool which mathematicians and scientists use to create nice looking articles & papers. I gave it a go myself, choosing to create write about fourier series. The purpose was more so to learn LaTeX than to learn about Fourier Series (also I was in year 12) so I cannot garuntee the mathematical accuracy of my statements, but I think it is a good overview.</p>
-
-
-<li><a href="Documents/EPQ.pdf">Extended Project Qualification (EPQ)</a></li>
-<p>A project I completed for a qualification, about mathematics and its history (very briefly).</p>
-
-
-<li><a href="Documents/ComputerScienceProject.pdf"> A Level Computer Science Programming Project </a></li>
-<p>A project in which I created a 3d physics engine from scratch (using only some basic libraries). All physics and 3d rendering was implemented by myself. This project also includes videos, found here.</p>
-
-
-
-</ul>
-
+    <footer>
+        <p>2024 Charles Roberts.</p>
+    </footer>
 </body>
 </html>
