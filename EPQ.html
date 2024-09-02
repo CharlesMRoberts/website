@@ -32,7 +32,7 @@
             background: #005bb5;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* Align items to the start (left) */
         }
 
         nav a {
@@ -45,6 +45,7 @@
             border-radius: 4px;
             text-decoration: none;
             display: inline-block;
+            margin: 0; /* Remove margin for consistent alignment */
         }
 
         nav a:hover {
@@ -121,7 +122,7 @@
         <iframe src="Documents/EPQ.pdf" type="application/pdf"></iframe>
     </div>
     <!-- Fallback download link -->
-    <p>If the PDF does not load, <a href="Documents/EPQ.pdf" download>click here to download it.</a></p>
+    <p>If PDF displays incorrectly on mobile, <a href="Documents/EPQ.pdf" download>click here to view it.</a></p>
 </section>
 
 <footer>
