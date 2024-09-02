@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charles Roberts</title>
+    <link rel="icon" href="Favicon.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #0073e6;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            padding: 1rem;
+            background: #005bb5;
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            background-color: #fff;
+            color: #005bb5;
+            border: 1px solid #005bb5;
+            padding: 0.5rem 1rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #f4f4f4;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section h2 {
+            color: #0073e6;
+            margin-bottom: 1rem;
+        }
+
+        .pdf-container {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 100%;
+            height: 80vh; /* Adjust the height as needed */
+        }
+
+        .pdf-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #0073e6;
+            color: #fff;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Extended Project Qualification</h1>
+</header>
+
+<nav>
+    <a href="index.html">&larr; Go Back</a>
+</nav>
+
+<section id="pdf-viewer">
+    <h2>View the PDF</h2>
+    <div class="pdf-container">
+        <iframe src="Documents/EPQ.pdf"></iframe>
+    </div>
+</section>
+
+<footer>
+    <p>2024 Charles Roberts.</p>
+</footer>
+
+</body>
+</html>
