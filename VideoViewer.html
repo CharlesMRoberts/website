@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charles Roberts</title>
+    <title>Charles Roberts - Video Gallery</title>
     <link rel="icon" href="Favicon.png">
     <style>
         body {
@@ -81,6 +81,7 @@
             padding: 0.5rem;
             text-align: center;
             font-weight: bold;
+            cursor: pointer;
         }
 
         .video-container video {
@@ -107,7 +108,7 @@
 <nav>
     <a href="index.html">&larr; Go Back</a>
 </nav>
-<p>If the videos take to long to load you can download them all here as a zip file.</p>
+
 <section id="video-gallery">
     <h2>Watch the Videos</h2>
 
@@ -117,7 +118,7 @@
 </section>
 
 <footer>
-    <p>2024 Charles Roberts.</p>
+    <p>&copy; 2024 Charles Roberts.</p>
 </footer>
 
 <script>
@@ -170,8 +171,10 @@
         const videoContainer = document.createElement('div');
         videoContainer.className = 'video-container';
 
-        const videoHeader = document.createElement('div');
+        const videoHeader = document.createElement('a');
         videoHeader.className = 'video-header';
+        videoHeader.href = `Documents/CSVideos/${video}`;
+        videoHeader.download = video;
         videoHeader.innerText = `Video ${index + 1}`;
 
         const videoElement = document.createElement('video');
